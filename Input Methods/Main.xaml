@@ -1,0 +1,269 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1870,4159" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This block of code demonstrates a workflow that uses different Input Methods to input data in a Notepad&#xD;&#xA;" DisplayName="Main Sequence - This is the code to test the input methods in UiPath" sap:VirtualizedContainerService.HintSize="642,4094" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Open application is used to open the blank notepad window&#xD;&#xA;" AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="580,3941" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="56cdca0b-55c8-444f-99df-7708b09c9cf5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,3608" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type First Text" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="56cdca0b-55c8-444f-99df-7708b09c9cf5" Text="Autmation makes life easier" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 51, 1263, 1308" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="df8158b8-f69c-46a0-b5ee-8a201a18dfbb" InformativeScreenshot="d73801f1ecd5cad40dc712823acdcb96.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Types the second text in Notepad file&#xD;&#xA;" ClickBeforeMode="Single" DisplayName="Type Second text- Send window Messages" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,260" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="56cdca0b-55c8-444f-99df-7708b09c9cf5" Text="[k(Enter)]Welcome to the new world of automation" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 51, 1263, 1308" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="709cc00d-8204-4bf3-b00b-38e39cf0ecf8" InformativeScreenshot="a75946d7a5321dd7cd316c7a5441dbf1.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Crrl+A selects all the text in the notepad file&#xD;&#xA;" ClickBeforeMode="None" DisplayName="Send Hotkey - Select all text" sap:VirtualizedContainerService.HintSize="484,241" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="56cdca0b-55c8-444f-99df-7708b09c9cf5" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V3">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 51, 1263, 1308" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="e0fd0e5f-979c-402b-8301-53c6a5f76232" InformativeScreenshot="499ceb80649e06001289f196220356a5.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NKeyboardShortcuts.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click format button from the menu section of the notepad file&#xD;&#xA;" ClickType="Single" DisplayName="Click Format Button" sap:VirtualizedContainerService.HintSize="484,214" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56cdca0b-55c8-444f-99df-7708b09c9cf5" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="80, 34, 40, 12" CvTextArgument="Format" CvType="Text" DesignTimeRectangle="74, 31, 52, 19" DesignTimeScaleFactor="1" FriendlyName="'Format'" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Format' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' name='Application' role='menu bar' /&gt;&lt;ctrl name='Format' role='menu item' automationid='' check:text='Format' /&gt;" Guid="9292b3f0-c92b-4990-b80a-fde49b656c7d" InformativeScreenshot="af0c0a35292a5cb381a73ff3034a1548.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Performs action on the format menu window&#xD;&#xA;" AttachMode="ByInstance" DisplayName="Use Application: notepad.exe" sap:VirtualizedContainerService.HintSize="484,605" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="e6aa708e-5a3b-4780-87fe-8d9eeec54690" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Font" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56cdca0b-55c8-444f-99df-7708b09c9cf5" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="2, 25, 147, 25" CvTextArea="34, 29, 34, 12" CvTextArgument="Font..." CvType="Button" DesignTimeRectangle="3, 25, 144, 22" DesignTimeScaleFactor="1" FriendlyName="'Font...'" FullSelectorArgument="&lt;ctrl name='Format' role='popup menu' /&gt;&lt;ctrl automationid='33' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Format' role='popup menu' /&gt;&lt;ctrl automationid='33' role='menu item' check:text='Font...' /&gt;" Guid="53cc8ebc-4070-4247-8204-75d11e2cd60d" InformativeScreenshot="da81e18b02f974d9642c6d6c66399ece.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="3905, 50, 150, 50" FilePath="C:\Windows\System32\notepad.exe" IconBase64="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" InformativeScreenshot="c1bdf91f7d96822955739b800817b99c.png" Selector="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;" Title="Untitled - Notepad" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Performs Action on Font window&#xD;&#xA;" AttachMode="ByInstance" DisplayName="Use Application: Font" sap:VirtualizedContainerService.HintSize="484,1755" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="47527e91-7dbc-4d39-9940-2cbb88f7f600" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1422" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="FontSize" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Types &quot;Times New Roman&quot; as Font Type" ClickBeforeMode="Single" DisplayName="Type Into - Font Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,249" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="47527e91-7dbc-4d39-9940-2cbb88f7f600" Text="Times New Roman" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CvElementArea="19, 61, 172, 22" CvType="InputBox" DesignTimeRectangle="23, 64, 166, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Consolas'" FullSelectorArgument="&lt;wnd ctrlid='1136' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1136' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="550ac1ad-5442-4a90-934f-e7a5f4ee185a" InformativeScreenshot="7d591d991301a4deca3480fb22987af2.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Font' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Font Style" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="47527e91-7dbc-4d39-9940-2cbb88f7f600" Text="Italic" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CvElementArea="209, 61, 129, 23" CvType="InputBox" DesignTimeRectangle="209, 61, 129, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Font style'" Guid="333c1cfa-1d1c-46e5-82ef-a94e250d4264" InformativeScreenshot="8a8fc42b3b517a918efa14bf85cd45bb.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Font' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArea="207, 45, 55, 15" CvTextArgument="Font style:" CvType="Text" DesignTimeRectangle="207, 45, 55, 15" ElementType="Text" FriendlyName="'Font style'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NGetText sap2010:Annotation.AnnotationText="Text gets stored in a variable named FontSize&#xD;&#xA;" DisplayName="Get Text - Font Size" sap:VirtualizedContainerService.HintSize="388,199" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="47527e91-7dbc-4d39-9940-2cbb88f7f600" TextString="[FontSize]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable CvElementArea="355, 61, 64, 23" CvType="InputBox" DesignTimeRectangle="358, 64, 57, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'11'" FullSelectorArgument="&lt;wnd ctrlid='1138' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1138' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="00ff8bfa-10f5-4f62-94ac-a2d9e92cce80" InformativeScreenshot="a047d4f345f7880958b9977f143c1351.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Font' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Incrementing Font Size with '5'&#xD;&#xA;" ClickBeforeMode="Single" DisplayName="Type Into - New Font Size" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,260" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="47527e91-7dbc-4d39-9940-2cbb88f7f600" Text="[(cint(FontSize)+5).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CvElementArea="355, 61, 64, 23" CvType="InputBox" DesignTimeRectangle="358, 64, 57, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'11'" FullSelectorArgument="&lt;wnd ctrlid='1138' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1138' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="b36c35e1-dc22-49f1-aa2a-0823d5eb4344" InformativeScreenshot="6d00f89da969dc69df5fdd82a4e31eb0.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Font' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Close the Font Window of Notepad Window&#xD;&#xA;" ClickBeforeMode="None" DisplayName="Send - Hotkey Enter" sap:VirtualizedContainerService.HintSize="388,221" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="3862, 152, 441, 478" FilePath="C:\Windows\System32\notepad.exe" IconBase64="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" InformativeScreenshot="dec065e59d48401069f20b3e4e8eb99c.png" Selector="&lt;wnd app='notepad.exe' cls='#32770' title='Font' /&gt;" Title="Font" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="3831, 0, 1296, 1407" FilePath="C:\Windows\System32\notepad.exe" IconBase64="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" InformativeScreenshot="a124a997e7f6222a7f51b670f02349b3.png" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" Title="Untitled - Notepad" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
